@@ -9,23 +9,23 @@
 ``` bash
 sqllocaldb create IndexNPR -s
 ```
-    Nazovi bazu isto kao i sto si stavio u conn stringu
+Nazovi bazu isto kao i sto si stavio u conn stringu
 
 ### Migracije
-```bash
+``` bash
 dotnet ef migrations add v1
 dotnet ef database update
 ```
-    Ovo radi svaki put kad promenis nesto u folderu Models!
+Ovo radi svaki put kad promenis nesto u folderu Models!
 
 ### Brisanje Migracija
-```bash
+``` bash
 dotnet ef database drop
 dotnet ef migrations remove
 ```
-    Nekad nece da ti da da obrises migracije ako su vec stavljene u bazu, tako da ces morati da obrises tu bazu
+Nekad nece da ti da da obrises migracije ako su vec stavljene u bazu, tako da ces morati da obrises tu bazu
 
 ### Run
-```bash
+``` bash
 dotnet watch run
 ```

@@ -1,0 +1,65 @@
+@WebTemplate_HostAddress = http://localhost:5215
+
+POST {{WebTemplate_HostAddress}}/Ispit/DodajMaterijal
+Content-Type: application/json
+
+{
+  "sifra": "skrrr",
+  "naziv": "string",
+  "cena": 0,
+  "nazivProizvodjaca": "string"
+}
+
+###
+
+POST {{WebTemplate_HostAddress}}/Ispit/DodajStovariste
+Content-Type: application/json
+
+{
+  "ime": "string",
+  "adresa": "string",
+  "brojTelefona": "stringstri"
+}
+
+###
+
+POST {{WebTemplate_HostAddress}}/Ispit/PrijemMaterijala
+Content-Type: application/json
+
+{
+  "stovaristeId": 1,
+  "materijalId": 1,
+  "kolicina": 100
+}
+
+###
+
+POST {{WebTemplate_HostAddress}}/Ispit/PrijemMaterijala
+Content-Type: application/json
+
+{
+  "stovaristeId": 1,
+  "materijalId": 2,
+  "kolicina": 100
+}
+
+###
+
+GET {{WebTemplate_HostAddress}}/Ispit/UkupnaVelicina
+
+###
+
+POST {{WebTemplate_HostAddress}}/Ispit/Prodaj
+Content-Type: application/json
+
+{
+  "stovaristeId": 1,
+  "materijalId": 1,
+  "kolicina": 99 
+}
+
+###
+
+GET {{WebTemplate_HostAddress}}/Ispit/Materijal/string
+
+###

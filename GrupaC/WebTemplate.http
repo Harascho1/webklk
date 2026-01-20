@@ -1,0 +1,138 @@
+@WebTemplate_HostAddress = https://localhost:7080
+
+POST {{WebTemplate_HostAddress}}/Ispit/dodaj-ribu
+Content-Type: application/json
+
+{
+  "nazivVrste": "lav",
+  "masa": 2,
+  "godineStarosti": 1
+}
+
+###
+
+POST {{WebTemplate_HostAddress}}/Ispit/dodaj-ribu
+Content-Type: application/json
+
+{
+  "nazivVrste": "tigar",
+  "masa": 5,
+  "godineStarosti": 2
+}
+
+###
+POST {{WebTemplate_HostAddress}}/Ispit/dodaj-ribu
+Content-Type: application/json
+
+{
+  "nazivVrste": "slon",
+  "masa": 25,
+  "godineStarosti": 3
+}
+
+###
+POST {{WebTemplate_HostAddress}}/Ispit/dodaj-rezervoar
+Content-Type: application/json
+
+{
+  "sifra": "string",
+  "zapremina": 300.0,
+  "temperatura": 20.0,
+  "datumPoslednjegCiscenja": "2026-01-19",
+  "kapacitet": 20,
+  "frekvencijaCiscenja": 5
+}
+###
+
+POST {{WebTemplate_HostAddress}}/Ispit/dodaj-rezervoar
+Content-Type: application/json
+
+{
+  "sifra": "skrksr",
+  "zapremina": 300.0,
+  "temperatura": 20.0,
+  "datumPoslednjegCiscenja": "2026-01-10",
+  "kapacitet": 20,
+  "frekvencijaCiscenja": 7 
+}
+###
+
+POST {{WebTemplate_HostAddress}}/Ispit/dodaj-rezervoar
+Content-Type: application/json
+
+{
+  "sifra": "primer",
+  "zapremina": 300.0,
+  "temperatura": 20.0,
+  "datumPoslednjegCiscenja": "2026-01-15",
+  "kapacitet": 5,
+  "frekvencijaCiscenja": 5
+}
+
+###
+POST {{WebTemplate_HostAddress}}/Ispit/dodaj-ribu-u-rezervoar
+Content-Type: application/json
+
+{
+  "rezervoarSifra": "string",
+  "ribaId": 1,
+  "brojJedinki": 5
+}
+
+###
+
+POST {{WebTemplate_HostAddress}}/Ispit/dodaj-ribu-u-rezervoar
+Content-Type: application/json
+
+{
+  "rezervoarSifra": "skrksr",
+  "ribaId": 2,
+  "brojJedinki": 5
+}
+
+###
+
+POST {{WebTemplate_HostAddress}}/Ispit/dodaj-ribu-u-rezervoar
+Content-Type: application/json
+
+{
+  "rezervoarSifra": "string",
+  "ribaId": 3,
+  "brojJedinki": 4
+}
+###
+
+POST {{WebTemplate_HostAddress}}/Ispit/dodaj-ribu-u-rezervoar
+Content-Type: application/json
+
+{
+  "rezervoarSifra": "skrksr",
+  "ribaId": 3,
+  "brojJedinki": 4
+}
+
+###
+PUT {{WebTemplate_HostAddress}}/Ispit/riba-u-rezervoaru
+Content-Type: application/json
+
+{
+  "rezervoarSifra": "string",
+  "ribaId": 1,
+  "brojJedinki": 4
+}
+
+###
+GET {{WebTemplate_HostAddress}}/Ispit/treba-ocistiti
+Accept: application/json
+
+###
+
+GET {{WebTemplate_HostAddress}}/Ispit/ukupna-masa/string
+Accept: application/json
+
+###
+
+GET {{WebTemplate_HostAddress}}/Ispit/ukupna-masa/skrksr
+Accept: application/json
+
+###
